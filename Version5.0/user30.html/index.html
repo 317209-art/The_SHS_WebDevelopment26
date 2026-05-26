@@ -56,46 +56,81 @@
     </style>
 
     <body>
-        <!---------------------------------- Begin the nav-bar ----------------------------------->
-        <nav class="navbar-expand-md navbar-dark bg-dark">
-  <div class="container-fluid">
+<!---------------------------------- Begin the nav-bar ----------------------------------->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarTogglerDemo03"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Brand -->
+        <a href="http://shakonet.isd720.com" class="navbar-brand">
+            WebDev
+        </a>
 
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav me-auto">
-
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Home</a>
-  </li>
-</ul>
-
-<div class="navbar-nav ms-auto">
-  <a href="#" class="nav-link disabled">Login</a>
-</div>
-
-      <form class="d-flex">
-        <input
-          type="search"
-          class="form-control me-2"
-          placeholder="Search"
-        />
-        <button class="btn btn-outline-primary" type="button">
-          Search
+        <!-- Hamburger Button -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+        >
+            <span class="navbar-toggler-icon"></span>
         </button>
-      </form>
-    </div>
 
-  </div>
+        <!-- Collapsible Navbar -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <!-- Left Side Links -->
+            <div class="navbar-nav">
+
+                <a href="#" class="nav-item nav-link active">
+                    Home
+                </a>
+
+                <a href="aboutMe.html" class="nav-item nav-link">
+                    About Me
+                </a>
+
+                <a href="music.html" class="nav-item nav-link disabled" tabindex="-1">
+                    Music
+                </a>
+
+                <a href="mailto:sample@gmail.com?Subject=Hello"
+                   class="nav-item nav-link disabled"
+                   tabindex="-1">
+                    Contact
+                </a>
+
+            </div>
+
+            <!-- Right Side Login -->
+            <div class="navbar-nav ms-auto">
+
+                <a href="#" class="nav-item nav-link disabled">
+                    Login
+                </a>
+
+            </div>
+
+            <!-- Search Bar -->
+            <form class="d-flex ms-3">
+
+                <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                >
+
+                <button
+                    class="btn btn-outline-light"
+                    type="submit">
+
+                    Search
+
+                </button>
+
+            </form>
+
+        </div>
+    </div>
 </nav>
         <header class="p-5 bg-primary-subtle text-black" name="Jumbotron">
             <h4> Bootstrap Examples</h4>
